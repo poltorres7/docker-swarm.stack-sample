@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  web:
+    image: 192.168.122.156/mxintech/stackdemo
+    build: .
+    ports:
+      - "8000:8000"
+  redis:
+    image: redis:alpine
